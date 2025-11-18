@@ -2,4 +2,24 @@ Isla Huar;Calbuco;Salmón Atlántico;1200
 Lago Llanquihue;Puerto Varas;Salmón;850
 Canal Pudeto;Ancud;Salmón Rosado;2100
 Seno Reloncaví;Cochamó;Ostión del Sur;640
-Golfo Corcovado;Quellón; Alga Luche;1750
+Golfo Corcovado;Quellón;Alga Luche;1750
+Canal de Chacao;Chacao;Chorito;980
+Estuario Reloncaví;Hornopirén;Salmón Coho;1560
+Isla Lemuy;Castro;Cholga;720
+Seno Última Esperanza;Puerto Natales;Centolla;430
+Canal Beagle;Puerto Williams;Erizo Rojo;290
+Bahía Inglesa;Caldera;Ostra Japonesa;680
+Golfo de Arauco;Coronel;Alga Pelillo;1120
+Estrecho de Magallanes;Punta Arenas;Mejillón;890
+Fiordo Aysén;Puerto Aysén;Salmón Chinook;1340
+Costa Valdiviana;Valdivia;Almeja Japonesa;560
+Archipiélago Los Chonos;Melinka;Lapa;410
+Bahía Mansa;Río Negro;Navajuela;670
+Canal Moraleda;Puerto Aguirre;Salmón Plateado;1890
+Golfo de Penas;Tortel;Caracol;320
+Costa Chiloé;Dalcahue;Ostra Chilena;780
+Fiordo Mitchell;Puerto Cisnes;Reineta;450
+Bahía Corral;Corral;Jaiba Marmola;590
+Archipiélago Guaitecas;Guaitecas;Luga Roja;1250
+Seno Skyring;Puerto Bories;Chorito Zapato;860
+Costa Osorno;Bahía Mansa;Trucha Arcoíris;710
