@@ -27,6 +27,14 @@ public class Main {
                 case 2:
                     System.out.println("Ingrese el producto:");
                     String producto = scanner.next();
+                    if(producto.length() < 3 || esNumero(producto)){
+                        System.out.println("\n");
+                        System.out.println("El producto no puede estar vacio, contener menos de 3 carcateres o ser un numero.");
+                        System.out.println("\n");
+                        mostrarMenu();
+                        opcion = scanner.nextInt();
+                        break;
+                    }
                     buscarPorProducto(centrosCultivo, producto);
                     mostrarMenu();
                     opcion = scanner.nextInt();
@@ -34,6 +42,14 @@ public class Main {
                 case 3:
                     System.out.println("Ingrese el centro:");
                     String nombreCentro = scanner.next();
+                    if(nombreCentro.length() < 3 || esNumero(nombreCentro)){
+                        System.out.println("\n");
+                        System.out.println("El centro no puede estar vacio, contener menos de 3 carcateres o ser un numero.");
+                        System.out.println("\n");
+                        mostrarMenu();
+                        opcion = scanner.nextInt();
+                        break;
+                    }
                     buscarPorCentro(centrosCultivo, nombreCentro);
                     mostrarMenu();
                     opcion = scanner.nextInt();
@@ -41,12 +57,28 @@ public class Main {
                 case 4:
                     System.out.println("Ingrese el tour:");
                     String tour = scanner.next();
+                    if(tour.length() < 3 || esNumero(tour)){
+                        System.out.println("\n");
+                        System.out.println("El tour no puede estar vacio, contener menos de 3 carcateres o ser un numero.");
+                        System.out.println("\n");
+                        mostrarMenu();
+                        opcion = scanner.nextInt();
+                        break;
+                    }
                     buscarPorTour(centrosCultivo, tour);
                     mostrarMenu();
                     opcion = scanner.nextInt();
                     break;
                 case 5:
                     System.out.println("Ingrese la cantidad:");
+                    if(cantidad < 0){
+                        System.out.println("\n");
+                        System.out.println("La cantidad no puede ser negativa.");
+                        System.out.println("\n");
+                        mostrarMenu();
+                        opcion = scanner.nextInt();
+                        break;
+                    }
                     cantidad = scanner.nextInt();
                     buscarPorCantidad(centrosCultivo, cantidad);
                     mostrarMenu();
@@ -54,6 +86,14 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Ingrese la cantidad mayor a:");
+                    if(cantidad < 0){
+                        System.out.println("\n");
+                        System.out.println("La cantidad no puede ser negativa.");
+                        System.out.println("\n");
+                        mostrarMenu();
+                        opcion = scanner.nextInt();
+                        break;
+                    }
                     cantidad = scanner.nextInt();
                     buscarPorCantidadMayor(centrosCultivo, cantidad);
                     mostrarMenu();
@@ -61,6 +101,14 @@ public class Main {
                     break;
                 case 7:
                     System.out.println("Ingrese la cantidad menor a:");
+                    if(cantidad < 0){
+                        System.out.println("\n");
+                        System.out.println("La cantidad no puede ser negativa.");
+                        System.out.println("\n");
+                        mostrarMenu();
+                        opcion = scanner.nextInt();
+                        break;
+                    }
                     cantidad = scanner.nextInt();
                     buscarPorCantidadMenor(centrosCultivo, cantidad);
                     mostrarMenu();
@@ -90,6 +138,15 @@ public class Main {
         System.out.println("7. Buscar por cantidad menor a");
         System.out.println("8. Salir");
         System.out.println("/////////////////////////////");
+    }
+    //metodo para verificar si es numero
+    public static boolean esNumero(String str) {
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
     //mostrar todos los centros
     public static void mostrarCentrosCultivo(List<Centro> centrosCultivo){
